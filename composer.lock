@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "287d99f84ddd0c8737be40cdf48834f8",
+    "content-hash": "43fb6d352ec8429b3dde1a64badb37cf",
     "packages": [
         {
             "name": "billplz/billplz-api",
-            "version": "3.7.2",
+            "version": "3.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Billplz/Billplz-API-Class.git",
-                "reference": "106749133da27983a20c1ca6649b8b161292b8a4"
+                "reference": "7aa365b57c2ff9d0aee9fb720989beedf88ada96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Billplz/Billplz-API-Class/zipball/106749133da27983a20c1ca6649b8b161292b8a4",
-                "reference": "106749133da27983a20c1ca6649b8b161292b8a4",
+                "url": "https://api.github.com/repos/Billplz/Billplz-API-Class/zipball/7aa365b57c2ff9d0aee9fb720989beedf88ada96",
+                "reference": "7aa365b57c2ff9d0aee9fb720989beedf88ada96",
                 "shasum": ""
             },
             "require": {
@@ -44,7 +44,7 @@
             ],
             "description": "A Billplz API Class",
             "homepage": "https://www.billplz.com/api",
-            "time": "2018-02-23T13:07:24+00:00"
+            "time": "2018-07-04T03:16:33+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
