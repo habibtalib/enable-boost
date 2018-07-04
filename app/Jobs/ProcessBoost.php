@@ -38,8 +38,12 @@ class ProcessBoost implements ShouldQueue
         $connnect = (new Connect($this->api_key))->detectMode();
         $billplz = new API($connnect);
 
+        echo PHP_EOL.PHP_EOL;
+        echo 'API Key ialah: '. $this->api_key.PHP_EOL.PHP_EOL;
+
         for ($ii=1;; $ii++) :
-            Log::debug('hi ini ialah perjalanan yang ke-'.strval($ii));
+            echo PHP_EOL.PHP_EOL;
+            echo 'hi ini ialah perjalanan yang ke-'.strval($ii).PHP_EOL.PHP_EOL;
             $response = $billplz->toArray($billplz->getCollectionIndex(array('page'=>strval($ii), 'status'=>'')));
 
             if (empty($response[1]['collections'])) {
