@@ -45,6 +45,8 @@ class ProcessBoostCollection implements ShouldQueue
 
         $billplz = new API($connnect);
 
+       // Log::debug('This is collection only and number '. $this->ii);
+
         /* This is for Collection */
 
         $ii = $this->ii;
@@ -90,6 +92,6 @@ class ProcessBoostCollection implements ShouldQueue
             $billplz->updatePaymentMethod($parameter);
         }
 
-        ProcessBoostCollection::dispatch($api_key, $ii++);
+        ProcessBoostCollection::dispatch($this->api_key, ++$ii);
     }
 }

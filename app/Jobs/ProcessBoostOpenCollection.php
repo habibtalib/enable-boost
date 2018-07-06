@@ -8,6 +8,9 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 
+use Billplz\Connect;
+use Billplz\API;
+
 class ProcessBoostOpenCollection implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
@@ -84,6 +87,6 @@ class ProcessBoostOpenCollection implements ShouldQueue
             }
             $billplz->updatePaymentMethod($parameter);
         }
-        ProcessBoostOpenCollection::dispatch($api_key, $ii++);
+        ProcessBoostOpenCollection::dispatch($this->api_key, ++$ii);
     }
 }

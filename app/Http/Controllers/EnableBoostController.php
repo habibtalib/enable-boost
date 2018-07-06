@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Jobs\ProcessBoostCollection;
+use App\Jobs\ProcessBoostOpenCollection;
 
 class EnableBoostController extends Controller
 {
