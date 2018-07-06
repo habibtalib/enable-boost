@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Jobs\ProcessBoost;
+use App\Jobs\ProcessBoostCollection;
 
 class EnableBoostController extends Controller
 {
@@ -11,7 +11,8 @@ class EnableBoostController extends Controller
     {
         $api_key = $request->input('api_key');
 
-        ProcessBoost::dispatch($api_key);
+        ProcessBoostCollection::dispatch($api_key);
+        ProcessBoostOpenCollection::dispatch($api_key);
 
         return 'Done';
     }
